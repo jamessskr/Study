@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/animate.css">
+    <title>Momentum Copy 211101</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contentLogin hidden">
+            <form id="loginForm" class="center">
+                <h2 class="text-white wow fadeIn" data-wow-duration="1s">Hello, What is your name?</h2>
+                <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+                    <input id="loginInput" type="text" placeholder="Write your name" maxlength="10" required>
+                    <button type="submit" id="loginButton">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="content hidden">
+            <div class="top wow fadeIn" data-wow-duration="1s" data-wow-delay=".7s">
+                <h1 id="greetingMSG" class="text-white">Welcome!</h1>
+                <h1 id="clock" class="text-white">00:00:00</h1>
+            </div>
+            <div id="todoContainer" class="center wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                <div id="todoContent">
+                    <form id="todo">
+                        <input placeholder="Write Your To-Dos Here!" required>
+                    </form>
+                    <ul id="todoList" class="text-white hidden"></ul>
+                </div>
+            </div>
+            <div id="quotes" class="center wow fadeIn" data-wow-duration="1s" data-wow-delay="1.3s">
+                <h4 class="text-white quote">quote</h4>
+                <h4 class="text-white auther hidden wow fadeIn" data-wow-duration=".2s">auther</h4>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="powered text-white">
+                <p>Powerd by Nico, Nomad Coders</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/custom.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/rndmbg.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/greetings.js"></script>
+</body>
+
+</html>
